@@ -7,7 +7,7 @@
 
 module.exports = async (client, message) => {
   if (message.author.bot || message.channel.type === "dm") {
-    message.channel.sendMessage("its weird, dont dm me \n\n you can add me to ur server by clicking this link - \n https://discord.com/api/oauth2/authorize?client_id=894126173183942676&permissions=8&scope=bot";
+    message.channel.sendMessage("its weird, dont dm me \n\n you can add me to ur server by clicking this link - \n https://discord.com/api/oauth2/authorize?client_id=894126173183942676&permissions=8&scope=bot");
                                 }
   let prefix = client.botconfig.DefaultPrefix;
 
