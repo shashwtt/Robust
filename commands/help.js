@@ -34,12 +34,7 @@ module.exports = {
               `To get info of each command type ${
                 GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
               }help [Command] | Have a nice day!`
-            ).setDescription(`${Commands.join("\n")}
-  
-  Discord Music Bot Version: v${require("../package.json").version}
-  [✨ Support Server](${
-    client.botconfig.SupportServer
-  }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | By [SudhanPlayz](https://github.com/SudhanPlayz)`);
+            ).setDescription(`${Commands.join("\n")}`);
     if (!args[0]) message.channel.send(Embed);
     else {
       let cmd =
